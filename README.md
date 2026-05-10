@@ -1,6 +1,8 @@
 # 💪 Fitzeous Fitness Club
 
-A modern, responsive fitness club website with an AI-powered chatbot, deployed entirely on Cloudflare Workers.
+A modern, responsive fitness club website with an AI-powered chatbot, deployed on Cloudflare Pages.
+
+**🌐 Live Site:** [https://fitzeous-fitness.pages.dev](https://fitzeous-fitness.pages.dev)
 
 ![Fitness Website](fitcover.jpg)
 
@@ -32,33 +34,32 @@ The Fitzeous Fitness Chatbot can answer questions about:
 - 🏢 Equipment and facilities
 - 📅 Upcoming events
 
-## 🚀 Quick Start
+## 🚀 Live Demo
 
-### Deploy to Cloudflare (3 Steps!)
+**Visit the live site:** [https://fitzeous-fitness.pages.dev](https://fitzeous-fitness.pages.dev)
 
-```bash
-# 1. Install dependencies
-npm install
+### Deploy Your Own
 
-# 2. Login to Cloudflare
-npx wrangler login
+1. Fork this repository
+2. Go to [Cloudflare Pages](https://dash.cloudflare.com)
+3. Connect your GitHub repo
+4. Configure:
+   - Build command: (empty)
+   - Build output directory: `/`
+5. Click "Save and Deploy"
 
-# 3. Deploy everything!
-npm run deploy
-```
-
-**Your site is live!** 🎉
-```
-https://fitzeous-fitness.your-subdomain.workers.dev
-```
+**Your site will be live in 2 minutes!** 🎉
 
 ### Local Development
 
 ```bash
-# Start local server
+# Install dependencies
+npm install
+
+# Start local server with chatbot
 npm run dev
 
-# Visit http://localhost:8787
+# Visit http://localhost:8000
 ```
 
 ## 📁 Project Structure
