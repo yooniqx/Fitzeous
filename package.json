@@ -1,0 +1,27 @@
+{
+  "name": "fitzeous-fitness",
+  "version": "1.0.0",
+  "description": "Fitzeous Fitness Club - Modern fitness website with AI chatbot",
+  "main": "worker.js",
+  "scripts": {
+    "dev": "node local-server.js",
+    "dev:worker": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node local-server.js"
+  },
+  "keywords": [
+    "fitness",
+    "gym",
+    "cloudflare",
+    "workers",
+    "chatbot"
+  ],
+  "author": "Fitzeous Team",
+  "license": "MIT",
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": "^0.3.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.90.0"
+  }
+}

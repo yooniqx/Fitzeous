@@ -1,0 +1,12 @@
+# Wrangler ignore file - files to exclude from deployment
+node_modules/
+.git/
+.wrangler/
+.vscode/
+*.md
+LICENSE
+.gitignore
+desktop.ini
+.dist/
+package.json
+package-lock.json

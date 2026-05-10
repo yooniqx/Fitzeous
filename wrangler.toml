@@ -1,0 +1,13 @@
+name = "fitzeous-fitness"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# Assets configuration - serves static files
+[site]
+bucket = "./"
+
+# To deploy:
+# 1. Install dependencies: npm install
+# 2. Login to Cloudflare: wrangler login
+# 3. Deploy: wrangler deploy
+# 4. Your site will be live at: https://fitzeous-fitness.your-subdomain.workers.dev

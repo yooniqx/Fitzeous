@@ -38,38 +38,40 @@ function readMore() {
   alert('Full article coming soon. Contact us for more information.');
 }
 
-// ---- Contact Form Submit — logs to browser console ----
+// ---- Contact Form Submit ----
 function submitForm() {
   const inputs = document.querySelectorAll('.contact-form input, .contact-form textarea');
   const labels = ['Name', 'Email', 'Phone', 'Query Topic', 'Message'];
+  let isValid = true;
   const formData = {};
 
   inputs.forEach(function (input, index) {
-    formData[labels[index] || ('Field ' + (index + 1))] = input.value.trim();
+    const value = input.value.trim();
+    formData[labels[index] || ('Field ' + (index + 1))] = value;
+    
+    // Basic validation
+    if (input.hasAttribute('required') && !value) {
+      isValid = false;
+      input.style.borderColor = 'red';
+    } else {
+      input.style.borderColor = '';
+    }
   });
 
-  const confirmed = window.confirm('Are you sure you want to submit?');
-  if (confirmed) {
-    console.log('%c Fitzeous — New Query Submission ', 'background:#035503;color:white;font-weight:bold;padding:4px 8px;border-radius:3px;');
-    console.table(formData);
+  if (!isValid) {
+    alert('Please fill in all required fields.');
+    return;
   }
-}
 
-// ---- Signup Form Submit — logs to browser console ----
-function submitSignup() {
-  const formData = {
-    'Name':              document.getElementById('su-name')   ? document.getElementById('su-name').value.trim()   : '',
-    'Email':             document.getElementById('su-email')  ? document.getElementById('su-email').value.trim()  : '',
-    'Phone':             document.getElementById('su-phone')  ? document.getElementById('su-phone').value.trim()  : '',
-    'Age Group':         document.getElementById('su-age')    ? document.getElementById('su-age').value           : '',
-    'Gender':            (function(){ const g = document.querySelector('input[name="gender"]:checked'); return g ? g.value : 'Not selected'; })(),
-    'How they heard':    document.getElementById('su-source') ? document.getElementById('su-source').value.trim() : '',
-    'Message':           document.getElementById('su-msg')    ? document.getElementById('su-msg').value.trim()    : ''
-  };
-
-  const confirmed = window.confirm('Confirm submission?');
-  if (confirmed) {
-    console.log('%c Fitzeous -- New Member Registration ', 'background:#035503;color:white;font-weight:bold;padding:4px 8px;border-radius:3px;');
-    console.table(formData);
-  }
+  // Show success message
+  alert('Thank you for contacting us! We will get back to you soon.\n\nNote: This is a demo site. In production, this would send your message to our team.');
+  
+  // Log to console for demo purposes
+  console.log('%c Fitzeous — Contact Form Submission ', 'background:#035503;color:white;font-weight:bold;padding:4px 8px;border-radius:3px;');
+  console.table(formData);
+  
+  // Clear form
+  inputs.forEach(function(input) {
+    input.value = '';
+  });
 }
