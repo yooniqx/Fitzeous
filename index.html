@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fitzeous Fitness Club – A brand new training experience.">
+  <title>Fitzeous – Home</title>
+  <link rel="stylesheet" href="fitstyle.css">
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <a href="index.html">
+      <img class="logo" src="logo-white.png" alt="Fitzeous Logo">
+    </a>
+    <nav>
+      <ul class="tabs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="fitevents.html">Events</a></li>
+        <li><a href="fitgallery.html">Gallery</a></li>
+        <li><a href="fitsignup.html">Sign-up</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+      <li><a href="#aboutus" onclick="closeMenu()">About Us</a></li>
+      <li><a href="#services" onclick="closeMenu()">Services</a></li>
+      <li><a href="fitevents.html" onclick="closeMenu()">Events</a></li>
+      <li><a href="fitgallery.html" onclick="closeMenu()">Gallery</a></li>
+      <li><a href="fitsignup.html" onclick="closeMenu()">Sign-up</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-content">
+
+    <!-- Hero -->
+    <section class="hero">
+      <img src="fitcover.jpg" alt="Fitness cover">
+      <div class="hero-overlay">
+        <div class="centered">A Brand New Training Experience...</div>
+      </div>
+    </section>
+
+    <!-- Why a Coach -->
+    <section>
+      <div class="section-heading">
+        <p class="o1">Why need a health coach for fitness</p>
+        <p class="o2">Our fitness coaches can enable you to meet your wellness objectives.
+          They can turn into your instructor, your helper, your mentor and your companion.
+          Our fitness coaches are degreed and confirmed by a certified wellness association.</p>
+        <hr class="smol-hr">
+      </div>
+
+      <div class="card-holder">
+        <div class="card">
+          <img src="fit1.jpg" alt="Nutrition Strategies">
+          <p>Nutrition Strategies</p>
+        </div>
+        <div class="card">
+          <img src="fit2.jpg" alt="Workout Routine">
+          <p>Workout Routine</p>
+        </div>
+        <div class="card">
+          <img src="fit3.jpg" alt="Individual Support">
+          <p>Individual Support</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="aboutus" class="abt-plat">
+      <div class="abt">
+        <p class="o1">About Us</p>
+        <p class="o2">Our fitness coaches can enable you to meet your wellness objectives. They can turn into your instructor, your helper, your mentor and your companion.</p>
+        <hr class="smol-hr" style="margin-left:0;">
+        <br>
+        <p class="o2">Choose from hundreds of workouts, healthy recipes, relaxing meditations,
+          and expert articles, for a whole body and mind approach to feeling great.
+          Professionally designed programs take the guesswork out of exercising.
+          Research-backed articles to help you care for your body and mind.
+          Fuel your day with recipes by Registered Dietitians and professional chefs.
+          Stay motivated and engaged with a little help from a supportive community of other members.
+          Programs offer day-to-day guidance on an interactive calendar to keep you on track.
+        </p>
+      </div>
+      <div class="abt">
+        <video autoplay loop muted playsinline>
+          <source src="fitness.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="section-heading">
+        <p class="o1">Our Services</p>
+        <p class="o2">Our fitness coaches can enable you to meet your wellness objectives.
+          They can turn into your instructor, your helper, your mentor and your companion.
+          Our fitness coaches are degreed and confirmed by a certified wellness association.</p>
+        <hr class="smol-hr">
+      </div>
+
+      <div class="service" style="margin-top:24px;">
+        <div class="serv-card">
+          <p class="serv-h">Balance Body &amp; Mind</p>
+          <p class="serv-b">The mind and the body are the greatest tools we possess to achieve positive wellbeing. It is imperative that we learn body intelligence, and use it as part of the treatment and prevention of physical and mental illness. Take time each day to quiet your mind and meditate.</p>
+          <br>
+          <a href="#" onclick="readMore(); return false;">Read more...</a>
+        </div>
+        <div class="serv-card">
+          <p class="serv-h">Nutrition Plan</p>
+          <p class="serv-b">A healthy eating plan gives your body the nutrients it needs every day while staying within your daily calorie goal for weight loss. A healthy eating plan also will lower your risk for heart disease and other health conditions. It emphasizes vegetables, fruits, whole grains, and fat-free or low-fat dairy products.</p>
+          <br>
+          <a href="#" onclick="readMore(); return false;">Read more...</a>
+        </div>
+        <div class="serv-card">
+          <p class="serv-h">Performance &amp; Fitness</p>
+          <p class="serv-b">Experts define physical fitness as "one's ability to execute daily activities with optimal performance, endurance, and strength with the management of disease, fatigue, and stress and reduced sedentary behavior." This description goes beyond being able to run quickly or lift heavy weights.</p>
+          <br>
+          <a href="#" onclick="readMore(); return false;">Read more...</a>
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="serv-card">
+          <p class="serv-h">Routine Programme</p>
+          <p class="serv-b">Depending on your goals, a workout schedule will likely include resistance training, cardiovascular exercise, active rest, and flexibility or mobility work. Get at least 150 minutes of moderate aerobic activity a week. Or get at least 75 minutes of vigorous aerobic activity a week.</p>
+          <br>
+          <a href="#" onclick="readMore(); return false;">Read more...</a>
+        </div>
+        <div class="serv-card">
+          <p class="serv-h">Weight Loss Programme</p>
+          <p class="serv-b">Do you think you need to lose weight? Have you been thinking about trying a weight-loss program? You are not alone. More than 60 percent of adults are overweight or have obesity — and many of them try to lose the extra pounds through different kinds of weight-loss programs.</p>
+          <br>
+          <a href="#" onclick="readMore(); return false;">Read more...</a>
+        </div>
+        <div class="serv-card">
+          <p class="serv-h">Cardio Exercise</p>
+          <p class="serv-b">Brisk walking, running, swimming, cycling, playing tennis and jumping rope. Heart-pumping aerobic exercise is the kind that doctors have in mind when they recommend at least 150 minutes per week of moderate activity. We make our trainees practice all those here.</p>
+          <br>
+          <a href="#" onclick="readMore(); return false;">Read more...</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="section-heading">
+        <p class="o1">Contact Us</p>
+        <p class="o2">Have a question or want to get started? Reach out to us!</p>
+        <hr class="smol-hr">
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <p>
+            🔗 www.fitzeousxxxx.com<br>
+            ✉️ info@fitzeousxxxx.com<br>
+            📞 +XX XXX XX XX XX<br>
+            📞 +XX XXX XX XX XX<br>
+            🏠 Fitzeous Fitness Club, XYZ Road, ABC City – XXXXXX.
+          </p>
+        </div>
+        <div class="contact-form">
+          <label>Name</label>
+          <input type="text" placeholder="Enter your name" required>
+          <label>Email</label>
+          <input type="email" placeholder="Enter your email" required>
+          <label>Phone</label>
+          <input type="tel" placeholder="Enter your phone number" required>
+          <label>Query Topic</label>
+          <input type="text" placeholder="Enter the topic of your query" required>
+          <label>Message</label>
+          <textarea placeholder="Type your message here..."></textarea>
+          <button class="frm-btn" onclick="submitForm()">Submit</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="end">
+      <div class="end-img">
+        <img src="logo-white.png" alt="Fitzeous Logo">
+      </div>
+      <p class="end-text">
+        Choose from hundreds of workouts, healthy recipes, relaxing meditations, and expert articles, for a whole body and mind approach to feeling great.
+        <br><br>
+        Connect with us through:&nbsp;
+        <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">Discord</a>
+        <br><br>
+        📞 +XX XXX XX XX XX<br>
+        ✉️ info@fitzeousxxxx.com<br>
+        🏠 Fitzeous Fitness Club, XYZ Road, ABC City – XXXXXX.
+      </p>
+      <hr>
+      <p class="end-copyright">Fitzeous Co. Copyright 2024</p>
+    </footer>
+
+  </div>
+
+  <script src="fitzeous.js"></script>
+</body>
+</html>

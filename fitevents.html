@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fitzeous Fitness Club – Upcoming events.">
+  <title>Fitzeous – Events</title>
+  <link rel="stylesheet" href="fitstyle.css">
+</head>
+<body>
+
+  <header class="top-bar">
+    <a href="index.html">
+      <img class="logo" src="logo-white.png" alt="Fitzeous Logo">
+    </a>
+    <nav>
+      <ul class="tabs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#aboutus">About Us</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="fitevents.html">Events</a></li>
+        <li><a href="fitgallery.html">Gallery</a></li>
+        <li><a href="fitsignup.html">Sign-up</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+      <li><a href="index.html#aboutus" onclick="closeMenu()">About Us</a></li>
+      <li><a href="index.html#services" onclick="closeMenu()">Services</a></li>
+      <li><a href="fitevents.html" onclick="closeMenu()">Events</a></li>
+      <li><a href="fitgallery.html" onclick="closeMenu()">Gallery</a></li>
+      <li><a href="fitsignup.html" onclick="closeMenu()">Sign-up</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-content">
+
+    <!-- Hero -->
+    <section class="hero">
+      <img src="fitcover1.jpeg" alt="Events cover">
+      <div class="hero-overlay">
+        <div class="centered">Upcoming Events...</div>
+      </div>
+    </section>
+
+    <!-- Events List -->
+    <section>
+      <div class="section-heading">
+        <p class="o1">Event List</p>
+        <p class="o2">Listed below are the upcoming events going to be held in our center. Contact us for further details.</p>
+        <hr class="smol-hr">
+      </div>
+
+      <div class="event-cards">
+        <div class="event-card">
+          <h3>🏋️ State Level Wrestling Competition</h3>
+          <p>Saturday, 10th February<br>6:00 PM – 11:00 PM</p>
+        </div>
+        <div class="event-card">
+          <h3>🤸 State Level Kabaddi Competition</h3>
+          <p>Thursday, 29th February<br>9:00 AM – 4:00 PM</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="section-heading">
+        <p class="o1">Contact Us</p>
+        <p class="o2">Have a question or want to get started? Reach out to us!</p>
+        <hr class="smol-hr">
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <p>
+            🔗 www.fitzeousxxxx.com<br>
+            ✉️ info@fitzeousxxxx.com<br>
+            📞 +XX XXX XX XX XX<br>
+            📞 +XX XXX XX XX XX<br>
+            🏠 Fitzeous Fitness Club, XYZ Road, ABC City – XXXXXX.
+          </p>
+        </div>
+        <div class="contact-form">
+          <label>Name</label>
+          <input type="text" placeholder="Enter your name" required>
+          <label>Email</label>
+          <input type="email" placeholder="Enter your email" required>
+          <label>Phone</label>
+          <input type="tel" placeholder="Enter your phone number" required>
+          <label>Query Topic</label>
+          <input type="text" placeholder="Enter the topic of your query" required>
+          <label>Message</label>
+          <textarea placeholder="Type your message here..."></textarea>
+          <button class="frm-btn" onclick="submitForm()">Submit</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="end">
+      <div class="end-img">
+        <img src="logo-white.png" alt="Fitzeous Logo">
+      </div>
+      <p class="end-text">
+        Choose from hundreds of workouts, healthy recipes, relaxing meditations, and expert articles, for a whole body and mind approach to feeling great.
+        <br><br>
+        Connect with us through:&nbsp;
+        <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">Discord</a>
+        <br><br>
+        📞 +XX XXX XX XX XX<br>
+        ✉️ info@fitzeousxxxx.com<br>
+        🏠 Fitzeous Fitness Club, XYZ Road, ABC City – XXXXXX.
+      </p>
+      <hr>
+      <p class="end-copyright">Fitzeous Co. Copyright 2024</p>
+    </footer>
+
+  </div>
+
+  <script src="fitzeous.js"></script>
+</body>
+</html>
